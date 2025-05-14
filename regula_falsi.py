@@ -2,8 +2,7 @@
 def regula_falsi(f, x0, x1, decimals=4):
     def next_point(x0, x1):
         return x0 - ((x1 - x0) / (f(x1) - f(x0))) * f(x0)
-
-    print("f(x) = x^3 - 9x + 1")
+        
     print(f"x0: {x0}")
     print(f"x1: {x1}")
     print(f"f(x0): {f(x0)}")
@@ -40,4 +39,5 @@ def func(x):
     return x**3 - 9*x + 1
 
 # Call the function
+print("f(x) = x^3 - 9x + 1")
 regula_falsi(func, x0=2, x1=4, decimals=4)
